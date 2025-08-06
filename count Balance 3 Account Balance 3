@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class BankTransaction {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int balance = scanner.nextInt();
+        int process = scanner.nextInt();
+
+        switch (process) {
+            case 1:
+                int depositAmount = scanner.nextInt();
+                balance += depositAmount;
+                System.out.println(balance);
+                break;
+       
+            case 2:
+                int withdrawAmount = scanner.nextInt();
+                if (withdrawAmount > balance) {
+                    System.out.println("Insufficient Balance");
+                } else {
+                    balance -= withdrawAmount;
+                    System.out.println(balance);
+                }
+                break;
+               
+            default:
+                System.out.println("Invalid Input");
+        }
+    }
+}
