@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        double profit = (x * (a - b)) - 100;
+        System.out.println("Number of copies sold:" + x);
+        System.out.println("Cost of each copy:" + a);
+        System.out.println("Cost spent by agency on each newspaper:" + b);
+        System.out.printf("The profit obtained is Rs.%.2f\n", profit);
+    }
+}
