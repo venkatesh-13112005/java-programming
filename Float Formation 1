@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        float decimalValue = scanner.nextFloat();
+        System.out.printf("%.6f\n", decimalValue);
+        System.out.printf("%.4f\n", decimalValue);
+        System.out.println(decimalValue);
+        System.out.println(Math.round(decimalValue));
+    }
+}
