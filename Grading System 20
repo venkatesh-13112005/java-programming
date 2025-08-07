@@ -1,0 +1,37 @@
+import java.util.*;
+
+public class StudentGrade {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        int marks1 = sc.nextInt();
+        int marks2 = sc.nextInt();
+        int marks3 = sc.nextInt();
+        int marks4 = sc.nextInt();
+        int marks5 = sc.nextInt();
+        int totalMarks = marks1 + marks2 + marks3 + marks4 + marks5;
+        double averageMarks = (float)totalMarks / 5;
+       
+        String grade;
+        if (averageMarks == 100) {
+            grade = "S";
+        } else if (averageMarks >= 90 && averageMarks < 100) {
+            grade = "A";
+        } else if (averageMarks >= 80 && averageMarks <= 89) {
+            grade = "B";
+        } else if (averageMarks >= 70 && averageMarks <= 79) {
+            grade = "C";
+        } else if (averageMarks >= 60 && averageMarks <= 69) {
+            grade = "D";
+        } else if (averageMarks >= 50 && averageMarks <= 59) {
+            grade = "E";
+        } else {
+            grade = "Fail";
+        }
+       
+        System.out.println("Name of the Student:" + name);
+        System.out.println("Total Mark:" + totalMarks);
+        System.out.printf("Average Mark:%.1f\n",averageMarks);
+        System.out.println("Grade Mark:" + grade);
+    }
+}
