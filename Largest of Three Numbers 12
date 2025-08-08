@@ -1,0 +1,23 @@
+mport java.util.Scanner;
+
+public class LargestOfThreeNumbers {
+    public static void main(String[] args) {
+        Scanner nums = new Scanner(System.in);
+        int a = nums.nextInt();
+        int b = nums.nextInt();
+        int c = nums.nextInt();
+        if (a > b) {
+            if (a > c) {
+                System.out.println("a is largest then b and c");
+            } else {
+                System.out.println("c is largest then a and b");
+            }
+        } else {
+            if (b > c) {
+                System.out.println("b is largest then a and c");
+            } else {
+                System.out.println("c is largest then a and b");
+            }
+        }
+    }
+}
