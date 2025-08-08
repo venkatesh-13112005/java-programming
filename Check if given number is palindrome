@@ -1,0 +1,20 @@
+mport java.util.Scanner;
+public class PalindromeChecking {
+    public static void main(String[] args) {
+        Scanner palin = new Scanner(System.in);
+        int num = palin.nextInt();
+
+        if (num >= 100 && num <= 999) {
+            int d1 = num / 100;      
+            int d3 = num % 10;    
+
+            if (d1 == d3) {
+                System.out.println("palindrome");
+            } else {
+                System.out.println("not palindrome");
+            }
+        } else {
+            System.out.println("Invalid Input");
+        }
+    }
+}
