@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        int a=obj.nextInt();
+        int b=obj.nextInt();
+        int s=0;
+        if(a>0 && b>0 && a<30 && b<30 && a<b){
+            for(int i=a; i<=b; i++){
+                if(i%2==0){
+                    s +=i;
+                }
+            }
+            System.out.println(s);
+        }else{
+            System.out.println("Invalid Input");
+        }
+    }
+}
