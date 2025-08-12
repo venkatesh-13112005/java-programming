@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a>9 && a<=99)
+        {
+            int fd=a/10;
+            int sd=a%10;
+            int sn=(sd*10)+fd;
+            System.out.println(sn);
+        }
+        else if (a > 99) { 
+                String numStr = String.valueOf(a); 
+                char fd = numStr.charAt(0); 
+                char sd = numStr.charAt(1); 
+                String sn = String.valueOf(sd)+fd; 
+                System.out.println(sn); 
+            } 
+        else {
+            System.out.println("STDOUT");
+        }
+    }
+}
