@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+            String str1=sc.nextLine();
+        char arr[]=str1.toCharArray();
+        int count=0;
+        for(int i=0;i<arr.length;i++){
+if(arr[i]=='a' ||arr[i]=='A' ||arr[i]=='e' || arr[i]=='E'|| arr[i]=='i'|| arr[i]=='I'|| arr[i]=='o'|| arr[i]=='O'|| arr[i]=='u'|| arr[i]=='U'){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
