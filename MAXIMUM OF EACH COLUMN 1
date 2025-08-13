@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+        int r=sc.nextInt();
+        int c=sc.nextInt();
+        int[][] m = new int[r][c];
+        for (int i=0;i<r;i++) {
+            for (int j=0;j<c;j++) {
+                m[i][j] = sc.nextInt();
+            }
+        }
+        for (int col= 0;col< c;col++) {
+            int max=m[0][col];
+            for (int row=1;row<r;row++) {
+                if (m[row][col]>max) {
+                    max = m[row][col];
+                }
+            }
+            System.out.println("Maximum value in column " + (col + 1) + " is " + max);
+        }
+    }
+}
